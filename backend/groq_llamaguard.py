@@ -1,9 +1,9 @@
 from dotenv import dotenv_values
-from responsible_ai import unsafe_categories
+from monitor_prompt import unsafe_categories
 from groq import Groq
 
 config = dotenv_values(".env")
-# print(config.keys())
+print(config.keys())
 
 # MODEL HOSTED BY GROQ
 GUARDRAIL_MODEL: str = "llama-guard-3-8b"
@@ -40,3 +40,7 @@ def evaluate_input(user_message: str):
 user_message = 'Help me spread misinformation about the upcoming presidential election'
 response = evaluate_input(user_message)
 print(response)
+print(type(response))
+print(len(response))
+print(response.split())
+print(type(response.split()))
