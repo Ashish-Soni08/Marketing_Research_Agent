@@ -1,15 +1,14 @@
 from dotenv import dotenv_values
-from monitor_prompt import unsafe_categories
+
 from groq import Groq
 
+from constants import GUARDRAIL_MODEL
+from monitor_prompt import unsafe_categories
+
 config = dotenv_values(".env")
-print(config.keys())
+# print(config.keys())
 
-# MODEL HOSTED BY GROQ
-GUARDRAIL_MODEL: str = "llama-guard-3-8b"
-GROQ_API_KEY: str = config["GROQ_API"]
-
-client = Groq(api_key=GROQ_API_KEY)
+client = Groq(api_key=config["GROQ_API_KEY"])
 
 def evaluate_input(user_message: str):
     """
