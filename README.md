@@ -1,6 +1,14 @@
-# Marketing_Research_Agent
+# PillPal💊
 
-[NVIDIA and LlamaIndex Developer Contest](https://developer.nvidia.com/llamaindex-developer-contest)
+## Problem Statement
+
+Have you ever come across the thin piece of folded paper that is part of every drug prescription box. Usually the text is in very small print and typically provides information about dosages, side effects, storage instructions and much more. They are hard to read and understand and requires some effort to get answers to common questions that you as a patient might have.
+
+## Solution
+
+Create a product that answers these questions and actually makes the medical information more accessible and easier to understand - enter PillPal💊
+
+A Retrieval Augmented Generation (RAG) based chatbot that answers questions based on the PDF document.
 
 ## Environement Setup
 
@@ -56,3 +64,7 @@ jupyter kernelspec list
 - **Developed by:** `Meta`
 - **Context Window:** `8,192 tokens`
 - [**Model Card**](https://huggingface.co/meta-llama/Llama-Guard-3-8B)
+
+## Built for
+
+[NVIDIA and LlamaIndex Developer Contest](https://developer.nvidia.com/llamaindex-developer-contest)
